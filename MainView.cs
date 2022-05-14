@@ -63,6 +63,9 @@ namespace IT_Task
 
         private void Mnlogout_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
 
         }
     }

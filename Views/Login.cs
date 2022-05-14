@@ -19,7 +19,8 @@ namespace IT_Task
         }
         private void ExitBtn_Click(object sender, EventArgs e)
         {
-            Close();
+            MessageBox.Show("Are you sure you want to exit");
+            Application.Exit();
         }
 
         private void Login_Load(object sender, EventArgs e)
