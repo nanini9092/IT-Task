@@ -120,7 +120,7 @@ namespace IT_Task
             this.Name = "Login";
             this.Text = "Login";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.Login_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.Shown += new System.EventHandler(this.Login_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -28,15 +28,8 @@ namespace IT_Task
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
-
-        private void LogoutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
         private void MnSaveToText_Click(object sender, EventArgs e)
         {
             try
@@ -66,6 +59,18 @@ namespace IT_Task
             this.Hide();
             Login login = new Login();
             login.Show();
+
+        }
+
+        private void MnInfoPc_Click(object sender, EventArgs e)
+        {
+            Views.ViewInfoPC viewInfoPC = new Views.ViewInfoPC()
+            {
+                
+            };
+            viewInfoPC.Show();
+            panelMain.Show();
+
 
         }
     }

@@ -33,7 +33,7 @@ namespace IT_Task
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainView));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.computerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infoPCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnInfoPc = new System.Windows.Forms.ToolStripMenuItem();
             this.statsPCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deployToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MnLogout = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +47,7 @@ namespace IT_Task
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.panelMain = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,14 +60,14 @@ namespace IT_Task
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(919, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1151, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // computerToolStripMenuItem
             // 
             this.computerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.infoPCToolStripMenuItem,
+            this.MnInfoPc,
             this.statsPCToolStripMenuItem,
             this.deployToolStripMenuItem,
             this.MnLogout});
@@ -74,11 +75,12 @@ namespace IT_Task
             this.computerToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.computerToolStripMenuItem.Text = "Computer";
             // 
-            // infoPCToolStripMenuItem
+            // MnInfoPc
             // 
-            this.infoPCToolStripMenuItem.Name = "infoPCToolStripMenuItem";
-            this.infoPCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.infoPCToolStripMenuItem.Text = "Info PC";
+            this.MnInfoPc.Name = "MnInfoPc";
+            this.MnInfoPc.Size = new System.Drawing.Size(180, 22);
+            this.MnInfoPc.Text = "Info PC";
+            this.MnInfoPc.Click += new System.EventHandler(this.MnInfoPc_Click);
             // 
             // statsPCToolStripMenuItem
             // 
@@ -172,11 +174,21 @@ namespace IT_Task
             this.notifyIcon1.Text = "notifyTestDB";
             this.notifyIcon1.Visible = true;
             // 
+            // panelMain
+            // 
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panelMain.Location = new System.Drawing.Point(0, 24);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1151, 519);
+            this.panelMain.TabIndex = 1;
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 145);
+            this.ClientSize = new System.Drawing.Size(1151, 543);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainView";
@@ -194,7 +206,7 @@ namespace IT_Task
         private System.Windows.Forms.ToolStripMenuItem computerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem networkToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem extendToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem infoPCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MnInfoPc;
         private System.Windows.Forms.ToolStripMenuItem statsPCToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deployToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bandwidthToolStripMenuItem;
@@ -206,5 +218,6 @@ namespace IT_Task
         private System.Windows.Forms.ToolStripMenuItem MnLogout;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ToolStripMenuItem MnSaveToText;
+        private System.Windows.Forms.Panel panelMain;
     }
 }

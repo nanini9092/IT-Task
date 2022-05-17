@@ -19,13 +19,8 @@ namespace IT_Task
         }
         private void ExitBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Are you sure you want to exit");
             Application.Exit();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-           
+            //this.Close();
         }
 
         private void Login_Shown(object sender, EventArgs e)
@@ -45,11 +40,9 @@ namespace IT_Task
                         String str = "Server=IT-HUUQUYEN; port=3368;Database=itstacks;uid=root;pwd=qvl^IT321";
                         String query = "SELECT * FROM `use` WHERE usename = '" + txtUse.Text + "'and password = '" + this.txtPass.Text + "'";
                         MySql.Data.MySqlClient.MySqlConnection con = new MySql.Data.MySqlClient.MySqlConnection(str);
-                        //MessageBox.Show("Conect");
                         MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(query,con);
                         MySql.Data.MySqlClient.MySqlDataReader dbr;
                         con.Open();
-                        //MessageBox.Show("open");
                         dbr = cmd.ExecuteReader();
                         int count = 0;
                         while (dbr.Read())
@@ -89,5 +82,22 @@ namespace IT_Task
 
         }
 
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result;
+            result = MessageBox.Show(" Are you want to exit ?", "Exit Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(result== DialogResult.Yes)
+            {
+                Application.Exit();
+            }    
+            else
+            {
+                if(result==DialogResult.No)
+                {
+                    e.Cancel = true;
+                }   
+                //Cancel = true;
+            }    
+        }
     }
 }
