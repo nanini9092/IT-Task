@@ -55,7 +55,7 @@ namespace IT_Task.Views
             this.dgvPC.RowTemplate.Height = 25;
             this.dgvPC.Size = new System.Drawing.Size(677, 408);
             this.dgvPC.TabIndex = 0;
-            this.dgvPC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPC_CellContentClick);
+            this.dgvPC.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPC_CellValueChanged);
             // 
             // txtNamepcID
             // 
@@ -107,7 +107,6 @@ namespace IT_Task.Views
             this.btShowlistPC.TabIndex = 0;
             this.btShowlistPC.Text = "Show List PC";
             this.btShowlistPC.UseVisualStyleBackColor = true;
-            this.btShowlistPC.Click += new System.EventHandler(this.btShowlistPC_Click);
             // 
             // ViewInfoPC
             // 

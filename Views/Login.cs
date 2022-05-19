@@ -38,7 +38,7 @@ namespace IT_Task
                     if (!(txtPass.Text == string.Empty))
                     {
                         String str = "Server=IT-HUUQUYEN; port=3368;Database=itstacks;uid=root;pwd=qvl^IT321";
-                        String query = "SELECT * FROM `use` WHERE usename = '" + txtUse.Text + "'and password = '" + this.txtPass.Text + "'";
+                        String query = "SELECT * FROM `usemanager` WHERE usename = '" + txtUse.Text + "'and password = '" + this.txtPass.Text + "'";
                         MySql.Data.MySqlClient.MySqlConnection con = new MySql.Data.MySqlClient.MySqlConnection(str);
                         MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(query,con);
                         MySql.Data.MySqlClient.MySqlDataReader dbr;

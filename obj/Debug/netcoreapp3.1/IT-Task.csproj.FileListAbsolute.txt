@@ -26,3 +26,4 @@ Q:\ADev_SysQVL\A.IT-Task\IT-Task\obj\Debug\netcoreapp3.1\IT-Task.csproj.CopyComp
 Q:\ADev_SysQVL\A.IT-Task\IT-Task\obj\Debug\netcoreapp3.1\IT-Task.dll
 Q:\ADev_SysQVL\A.IT-Task\IT-Task\obj\Debug\netcoreapp3.1\IT-Task.pdb
 Q:\ADev_SysQVL\A.IT-Task\IT-Task\obj\Debug\netcoreapp3.1\IT-Task.genruntimeconfig.cache
+Q:\ADev_SysQVL\A.IT-Task\IT-Task\obj\Debug\netcoreapp3.1\IT-Task.csproj.AssemblyReference.cache

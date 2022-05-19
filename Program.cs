@@ -17,7 +17,7 @@ namespace IT_Task
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Views.ViewInfoPC());
+            Application.Run(new Login());
         }
     }
 }
