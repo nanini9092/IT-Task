@@ -863,11 +863,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Q:\\ADev_SysQVL\\A.IT-Task\\IT-Task\\IT-Task.csproj",
+      "projectUniqueName": "D:\\dev\\A.Asp.net\\IT-Task\\IT-Task.csproj",
       "projectName": "IT-Task",
-      "projectPath": "Q:\\ADev_SysQVL\\A.IT-Task\\IT-Task\\IT-Task.csproj",
+      "projectPath": "D:\\dev\\A.Asp.net\\IT-Task\\IT-Task.csproj",
       "packagesPath": "C:\\Users\\huuquyen\\.nuget\\packages\\",
-      "outputPath": "Q:\\ADev_SysQVL\\A.IT-Task\\IT-Task\\obj\\",
+      "outputPath": "D:\\dev\\A.Asp.net\\IT-Task\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "Q:\\ToolsVs2019\\NuGetPackages",
@@ -917,6 +917,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.22, 3.1.22]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
