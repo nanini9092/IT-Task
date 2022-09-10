@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "De1XLTt++re5pGTAt3aLb91TZFRmTsJf3meCUVveMrVFTGtfs/JfVO7hdZY89sU8Lo/1fdswnNoOllc+oNVWGQ==",
+  "dgSpecHash": "zoRIf5VJAbP4jyrbDQ0z4THn+t99zzeZnf9bkSg4eIoWvMEwYpM7+dyj7Abybj1y4GSVos3+vhAXnXuPVleL/w==",
   "success": true,
   "projectFilePath": "D:\\dev\\A.Asp.net\\IT-Task\\IT-Task.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\huuquyen\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
     "C:\\Users\\huuquyen\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
     "C:\\Users\\huuquyen\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\huuquyen\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1001\\microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512",
     "C:\\Users\\huuquyen\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\huuquyen\\.nuget\\packages\\mysql.data\\8.0.29\\mysql.data.8.0.29.nupkg.sha512",
     "C:\\Users\\huuquyen\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

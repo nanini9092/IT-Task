@@ -31,17 +31,20 @@ namespace IT_Task.Views
         {
             this.dgvPC = new System.Windows.Forms.DataGridView();
             this.txtNamepcID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtNamePc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbDepartment = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.txtPropertycode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtClientIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtNamePC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtDept = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btShowlistPC = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lbShowCount = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btCountPrinter = new System.Windows.Forms.Button();
+            this.btCountPC = new System.Windows.Forms.Button();
+            this.btEpExecl = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPC)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvPC
@@ -49,110 +52,135 @@ namespace IT_Task.Views
             this.dgvPC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.txtNamepcID,
-            this.txtNamePc,
-            this.txtIP,
-            this.cbDepartment,
-            this.txtPropertycode});
-            this.dgvPC.Location = new System.Drawing.Point(12, 12);
+            this.txtClientIP,
+            this.txtNamePC,
+            this.txtDept,
+            this.txtType});
+            this.dgvPC.Location = new System.Drawing.Point(31, 12);
             this.dgvPC.Name = "dgvPC";
             this.dgvPC.RowTemplate.Height = 25;
-            this.dgvPC.Size = new System.Drawing.Size(677, 408);
+            this.dgvPC.Size = new System.Drawing.Size(677, 731);
             this.dgvPC.TabIndex = 0;
             this.dgvPC.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPC_CellValueChanged);
             // 
             // txtNamepcID
             // 
-            this.txtNamepcID.DataPropertyName = "NamepcID";
+            this.txtNamepcID.DataPropertyName = "ID";
             this.txtNamepcID.HeaderText = "ID";
             this.txtNamepcID.Name = "txtNamepcID";
             // 
-            // txtNamePc
+            // txtClientIP
             // 
-            this.txtNamePc.DataPropertyName = "NamePc";
-            this.txtNamePc.HeaderText = "Name Pc";
-            this.txtNamePc.Name = "txtNamePc";
+            this.txtClientIP.DataPropertyName = "ClientIP";
+            this.txtClientIP.HeaderText = "Client IP";
+            this.txtClientIP.Name = "txtClientIP";
             // 
-            // txtIP
+            // txtNamePC
             // 
-            this.txtIP.DataPropertyName = "IP";
-            this.txtIP.HeaderText = "IP";
-            this.txtIP.Name = "txtIP";
+            this.txtNamePC.DataPropertyName = "NamePC";
+            this.txtNamePC.HeaderText = "Name PC";
+            this.txtNamePC.Name = "txtNamePC";
             // 
-            // cbDepartment
+            // txtDept
             // 
-            this.cbDepartment.DataPropertyName = "Department";
-            this.cbDepartment.HeaderText = "Department";
-            this.cbDepartment.Name = "cbDepartment";
-            this.cbDepartment.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.cbDepartment.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.txtDept.DataPropertyName = "Dept";
+            this.txtDept.HeaderText = "Department";
+            this.txtDept.Name = "txtDept";
             // 
-            // txtPropertycode
+            // txtType
             // 
-            this.txtPropertycode.DataPropertyName = "Propertycode";
-            this.txtPropertycode.HeaderText = "Property Code";
-            this.txtPropertycode.Name = "txtPropertycode";
+            this.txtType.DataPropertyName = "Type";
+            this.txtType.HeaderText = "Type";
+            this.txtType.Name = "txtType";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.btShowlistPC);
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.btEpExecl);
+            this.groupBox1.Controls.Add(this.btCountPrinter);
+            this.groupBox1.Controls.Add(this.btCountPC);
             this.groupBox1.Location = new System.Drawing.Point(714, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(176, 408);
+            this.groupBox1.Size = new System.Drawing.Size(176, 731);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Action";
             // 
-            // btShowlistPC
+            // groupBox2
             // 
-            this.btShowlistPC.Location = new System.Drawing.Point(27, 34);
-            this.btShowlistPC.Name = "btShowlistPC";
-            this.btShowlistPC.Size = new System.Drawing.Size(112, 23);
-            this.btShowlistPC.TabIndex = 0;
-            this.btShowlistPC.Text = "Name PC";
-            this.btShowlistPC.UseVisualStyleBackColor = true;
+            this.groupBox2.Controls.Add(this.lbShowCount);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Location = new System.Drawing.Point(7, 625);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(163, 100);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Chi Tiết";
             // 
-            // button2
+            // lbShowCount
             // 
-            this.button2.Location = new System.Drawing.Point(27, 84);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Count PC";
-            this.button2.UseVisualStyleBackColor = true;
+            this.lbShowCount.AutoSize = true;
+            this.lbShowCount.Location = new System.Drawing.Point(70, 34);
+            this.lbShowCount.Name = "lbShowCount";
+            this.lbShowCount.Size = new System.Drawing.Size(87, 15);
+            this.lbShowCount.TabIndex = 1;
+            this.lbShowCount.Text = "Number Count";
             // 
-            // button3
+            // label1
             // 
-            this.button3.Location = new System.Drawing.Point(27, 139);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(112, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Login Admin";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Tổng Số :";
             // 
-            // button4
+            // btCountPrinter
             // 
-            this.button4.Location = new System.Drawing.Point(27, 200);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 23);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Sing Out";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btCountPrinter.Location = new System.Drawing.Point(27, 84);
+            this.btCountPrinter.Name = "btCountPrinter";
+            this.btCountPrinter.Size = new System.Drawing.Size(112, 23);
+            this.btCountPrinter.TabIndex = 0;
+            this.btCountPrinter.Text = "Count Printer";
+            this.btCountPrinter.UseVisualStyleBackColor = true;
+            this.btCountPrinter.Click += new System.EventHandler(this.btCountPrinter_Click);
+            // 
+            // btCountPC
+            // 
+            this.btCountPC.Location = new System.Drawing.Point(27, 34);
+            this.btCountPC.Name = "btCountPC";
+            this.btCountPC.Size = new System.Drawing.Size(112, 23);
+            this.btCountPC.TabIndex = 0;
+            this.btCountPC.Text = "Count PC";
+            this.btCountPC.UseVisualStyleBackColor = true;
+            this.btCountPC.Click += new System.EventHandler(this.btCountPC_Click);
+            // 
+            // btEpExecl
+            // 
+            this.btEpExecl.Location = new System.Drawing.Point(27, 132);
+            this.btEpExecl.Name = "btEpExecl";
+            this.btEpExecl.Size = new System.Drawing.Size(112, 23);
+            this.btEpExecl.TabIndex = 0;
+            this.btEpExecl.Text = "Export Excel";
+            this.btEpExecl.UseVisualStyleBackColor = true;
+            this.btEpExecl.Click += new System.EventHandler(this.btEpExecl_Click);
             // 
             // ViewInfoPC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 450);
+            this.ClientSize = new System.Drawing.Size(902, 755);
             this.Controls.Add(this.dgvPC);
             this.Controls.Add(this.groupBox1);
             this.Name = "ViewInfoPC";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewInfoPC";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.ViewInfoPC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPC)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -162,14 +190,16 @@ namespace IT_Task.Views
         private System.Windows.Forms.DataGridView dgvPC;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btShowlistPC;
+        private System.Windows.Forms.Button btCountPC;
+        private System.Windows.Forms.Button btCountPrinter;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtNamepcID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtNamePc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtIP;
-        private System.Windows.Forms.DataGridViewComboBoxColumn cbDepartment;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtPropertycode;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtClientIP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtNamePC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtDept;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txtType;
+        private System.Windows.Forms.Label lbShowCount;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btEpExecl;
     }
 }

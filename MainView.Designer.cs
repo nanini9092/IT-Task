@@ -60,7 +60,7 @@ namespace IT_Task
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1151, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1236, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,26 +78,26 @@ namespace IT_Task
             // MnInfoPc
             // 
             this.MnInfoPc.Name = "MnInfoPc";
-            this.MnInfoPc.Size = new System.Drawing.Size(180, 22);
+            this.MnInfoPc.Size = new System.Drawing.Size(117, 22);
             this.MnInfoPc.Text = "Info PC";
             this.MnInfoPc.Click += new System.EventHandler(this.MnInfoPc_Click);
             // 
             // statsPCToolStripMenuItem
             // 
             this.statsPCToolStripMenuItem.Name = "statsPCToolStripMenuItem";
-            this.statsPCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.statsPCToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.statsPCToolStripMenuItem.Text = "Stats PC";
             // 
             // deployToolStripMenuItem
             // 
             this.deployToolStripMenuItem.Name = "deployToolStripMenuItem";
-            this.deployToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deployToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.deployToolStripMenuItem.Text = "Deploy";
             // 
             // MnLogout
             // 
             this.MnLogout.Name = "MnLogout";
-            this.MnLogout.Size = new System.Drawing.Size(180, 22);
+            this.MnLogout.Size = new System.Drawing.Size(117, 22);
             this.MnLogout.Text = "Logout";
             this.MnLogout.Click += new System.EventHandler(this.Mnlogout_Click);
             // 
@@ -180,18 +180,19 @@ namespace IT_Task
             this.panelMain.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panelMain.Location = new System.Drawing.Point(0, 24);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1151, 519);
+            this.panelMain.Size = new System.Drawing.Size(1236, 671);
             this.panelMain.TabIndex = 1;
             // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 543);
+            this.ClientSize = new System.Drawing.Size(1236, 695);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainView";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

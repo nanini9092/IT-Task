@@ -42,7 +42,6 @@ D:\dev\A.Asp.net\IT-Task\bin\Debug\netcoreapp3.1\MySql.Data.dll
 D:\dev\A.Asp.net\IT-Task\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
 D:\dev\A.Asp.net\IT-Task\bin\Debug\netcoreapp3.1\ZstdNet.dll
 D:\dev\A.Asp.net\IT-Task\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
-D:\dev\A.Asp.net\IT-Task\obj\Debug\netcoreapp3.1\IT-Task.csproj.AssemblyReference.cache
 D:\dev\A.Asp.net\IT-Task\obj\Debug\netcoreapp3.1\IT_Task.MainView.resources
 D:\dev\A.Asp.net\IT-Task\obj\Debug\netcoreapp3.1\IT_Task.Services.ConectMariaDB.resources
 D:\dev\A.Asp.net\IT-Task\obj\Debug\netcoreapp3.1\IT_Task.Login.resources
@@ -56,3 +55,6 @@ D:\dev\A.Asp.net\IT-Task\obj\Debug\netcoreapp3.1\IT-Task.csproj.CopyComplete
 D:\dev\A.Asp.net\IT-Task\obj\Debug\netcoreapp3.1\IT-Task.dll
 D:\dev\A.Asp.net\IT-Task\obj\Debug\netcoreapp3.1\IT-Task.pdb
 D:\dev\A.Asp.net\IT-Task\obj\Debug\netcoreapp3.1\IT-Task.genruntimeconfig.cache
+D:\dev\A.Asp.net\IT-Task\obj\Debug\netcoreapp3.1\IT_Task.Views.FrmCountPC.resources
+D:\dev\A.Asp.net\IT-Task\obj\Debug\netcoreapp3.1\IT-Task.csproj.AssemblyReference.cache
+D:\dev\A.Asp.net\IT-Task\bin\Debug\netcoreapp3.1\Microsoft.Office.Interop.Excel.dll
